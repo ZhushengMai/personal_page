@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="model first">
+        <div class="content">
+            <p><span>麦著胜</span>同学：</p>
+            <p>在第5届中国程序猿吐槽大会上，过关斩将，荣获大会“一等大嘴奖”。</p>
+            <p> 特发此证，以资证明！</p>
+            <p>中国程序猿吐槽大会组委会</p>
+            <p> 2025年12月6日</p>
+        </div>
+    </div>
+
+    <div class="model second">
+        <div class="content">
+            <p><span>麦著胜</span>同学：</p>
+            <p>在第5届中国程序猿吐槽大会上，过关斩将，荣获大会“二等大嘴奖”。</p>
+            <p> 特发此证，以资证明！</p>
+            <p>中国程序猿吐槽大会组委会</p>
+            <p> 2025年12月6日</p>
+        </div>
+    </div>
+
+    <div class="model third">
+        <div class="content">
+            <p><span>麦著胜</span>同学：</p>
+            <p>在第5届中国程序猿吐槽大会上，过关斩将，荣获大会“三等大嘴奖”。</p>
+            <p> 特发此证，以资证明！</p>
+            <p>中国程序猿吐槽大会组委会</p>
+            <p> 2025年12月6日</p>
+        </div>
+    </div>
+
+    <style>
+        /* 先把p的内外边距清空，设为0 */
+        p {
+            margin: 0;
+            font-size: 2em;
+            
+
+            
+        }
+
+        .model {
+            background-image: url(奖状.jpg);
+            background-repeat: no-repeat;
+            width: 1024px;
+            height: 680px;
+            /* 设成和图一样大，当然也可以缩放，请查阅背景相关属性 */
+            background-size: cover;
+            /* 把背景图设为奖状 */
+
+            /* 居中 */
+            margin: 10px auto;
+
+            /* 可能会遇到外边距折叠，用overflow: hidden设置一个BFC来解决 */
+            /* 关于外边距折叠，https://blog.csdn.net/lhjuejiang/article/details/79732742 */
+            overflow: hidden;
+            
+        }
+
+        .content {
+            /* 用line-height让行之间有更好的间距 */
+            line-height: 50px;
+            /* 让文字在背景或边框中有内边距，这个其实可以不要 */
+            /* padding: 0.5em; */
+        }
+
+        /* 设第一行:字1.5em，下划线 */
+        .content p:nth-child(1) span {
+            text-decoration: underline;
+
+        }
+
+        /* 设获奖词，首行缩进2个字 */
+        .content p:nth-child(2) {
+            text-indent: 2em;
+            
+        }
+
+        .content p:nth-child(3) {
+            padding-left: 2em;
+
+        }
+
+        .content p:nth-child(4){
+            text-align: right;
+        }
+        .content p:nth-child(5){
+            text-align: right;
+        }
+
+        /* 用text-align设置名，靠右对齐 */
+        
+
+       /* 用text-align设置时间，靠右对齐，同时，又不靠右太紧，用padding-right缩回1em*/
+        
+
+
+        /* 想办法把内容框设好大小，移动到奖状中间去 */
+        .content {
+            /* 先设个背景，以便观察，最后成稿时，可去掉*/
+            
+            /* 只设宽度，高度由内容撑开 */
+           width: 700px;
+           margin: 250px auto;
+           
+           
+            /* 通过margin让内容去到恰当的位置 */
+        }
+
+        /* 若想不同奖项用不一样的字体，该如何设置？ 比如一等奖用隶书体二等奖用楷体，三等奖用仿宋，设置一等奖顶层元素，让其子元素继承字体 */
+        .first {
+            font-family: LiSu,Georgia, 'Times New Roman', Times, serif;
+        }
+        .second{
+            font-family: simsun;
+        }
+        .third{
+            font-family: FangSong;
+        }
+
+        /* 二等奖用微软雅黑 */
+
+        /* 三等奖用仿宋 */
+
+</style>
+</body>
+
+</html>

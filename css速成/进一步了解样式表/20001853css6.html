@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+    html:root{
+        background-color:#ccc;
+    }
+    .emtpy{
+        background: pink;
+        height: 80px;
+        width: 80px;
+    }
+    .emtpy:empty{
+        background-color: fuchsia;
+    }
+h5:first-child{
+    color: green;
+}
+
+h4:last-child{
+    color: indianred;
+}
+
+.four p:only-child{
+    color: lavender;
+}
+
+.five p:first-of-type{
+    color: lightcoral;
+}
+
+.six p:last-of-type{
+    color: lightgoldenrodyellow;
+}
+
+.seven p:only-child{
+    background-color: lightgreen;
+}
+
+.eight p:nth-child(2){
+    background-color: aqua;
+}
+
+.nine p:nth-last-child(1){
+    background-color: bisque;
+}
+
+.ten p:nth-of-type(2){
+    background-color: red;
+}
+
+.eleven p:nth-last-of-type(1){
+    background-color: blueviolet;
+}
+    </style>
+    <title>结构性伪类E:root</title>
+</head>
+<body>
+    结构性伪类E:emtpy
+    <div class="emtpy"></div>
+    <div class="emtpy">伪类</div>
+    <div class="emtpy"></div>
+<hr>
+    <div class="two">
+        <h5>结构性伪类first-child</h5>
+        <h5>结构性伪类first-child</h5>
+        <h5>结构性伪类first-child</h5>
+    </div>
+    <hr>
+    <div class="three">
+        <h4>结构性伪类:last-child</h4>
+        <h4>结构性伪类:last-child</h4>
+        <h4>结构性伪类:last-child</h4>
+
+    </div>
+    <hr>
+    <div class="four">
+        <p>结构性伪类only-child</p>
+        <p>结构性伪类only-child</p>
+    </div>
+
+    <div class="four">
+        <p>结构性伪类only-child</p>
+    </div>
+    <hr>
+    <div class="five">
+        <p>结构性伪类firt-of-type</p>
+        <p>结构性伪类firt-of-type</p>
+        <p>结构性伪类firt-of-type</p>
+    </div>
+    <hr>
+    <div class="six">
+        <p>结构性伪类last-of-type</p>
+        <p>结构性伪类last-of-type</p>
+        <p>结构性伪类last-of-type</p>
+    </div>
+    <hr>
+    
+    <div class="seven">
+        <p>结构性伪类only-child</p>
+    </div>
+
+    <div class="seven">
+        <p>结构性伪类only-child</p>
+        <p>结构性伪类only-child</p>
+    </div>
+    <hr>
+    <div class="eight">
+        <p>结构性伪类 nth-child()</p>
+        <p>结构性伪类 nth-child()</p>
+        <p>结构性伪类 nth-child()</p>
+
+
+    </div>
+    <hr>
+    <div class="nine">
+        <p>结构性伪类 nth-last-child</p>
+        <p>结构性伪类 nth-last-child</p>
+        <p>结构性伪类 nth-last-child</p>
+        <p>结构性伪类 nth-last-child</p>
+        <p>结构性伪类 nth-last-child</p>
+    </div>
+    <hr>
+    <div class="ten">
+        <p>结构伪类nth-of-type</p>
+        <p>结构伪类nth-of-type</p>
+        <p>结构伪类nth-of-type</p>
+        <p>结构伪类nth-of-type</p>
+    </div>
+    <hr>
+    <div class="eleven">
+        <p>结构伪类nth-last-of-type</p>
+        <p>结构伪类nth-last-of-type</p>
+        <p>结构伪类nth-last-of-type</p>
+        <p>结构伪类nth-last-of-type</p>
+        <p>结构伪类nth-last-of-type</p>
+    </div>
+
+</body>
+
+</html>

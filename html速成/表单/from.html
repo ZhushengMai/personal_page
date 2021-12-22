@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+    <style>
+        label {display:inline-block; width: 15em; margin-right: 1em; text-align: right; }
+        .code-display{
+            width: 100px;
+            height: 50px;
+            background-color: antiquewhite;
+            margin-left: 40%;
+            text-align: center;
+            line-height: 50px;
+        }
+        .code-display:hover pre{
+            display: block;
+        }
+        pre{
+            margin-top: 0;
+            width: 300px;
+            height: 500px;
+            background-color: antiquewhite;
+            text-align: center;
+            display: none;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="code-display">
+        代码展示
+        <pre>
+            label {
+                display:inline-block; 
+                width: 15em; 
+                margin-right: 1em; 
+                text-align: right; 
+            }
+        </pre>
+        </div>
+    </div>
+
+   <form action="action.html" method="POST" class="form0">
+        <label for="name">
+            姓名：</label><input type="name" name="name" placeholder="请输入姓名">
+        <br>
+        <label for="telephone">
+            手机：
+        </label>
+        <input type="tel" name="telephone" id="" placeholder="请输入手机号码"><br>
+        
+        <label for="date">
+        出生日期：</label>
+        <input type="date" name="date"><br>
+        
+        <label for="email">
+        邮箱:</label>
+        <input type="email" placeholder="请输入邮箱" name="email"><br>
+        
+        <label for="sex">
+        性别：</label>
+        <input type="radio" name="sex" value="male">男
+        <input type="radio" name="sex" value="female">女
+
+        <br>
+
+        <label for="marrieding">
+        婚姻状态：</label>
+        <select name="marrieding" id="">
+                    <option value="married">已婚</option>
+                    <option value="notmarried">未婚</option>
+        </select>
+        <br>
+      
+        <label for="hobby">
+            爱好：
+         </label>
+            <input type="checkbox" name="hobby" id="">打球
+            <input type="checkbox" name="hobby" id="">看书
+            <input type="checkbox" name="" id="">看电影
+            <input type="checkbox" name="" id="">跑步
+            <input type="checkbox" name="" id="">玩游戏
+       <br>
+    <label for="button"></label>
+        <input type="submit" value="提交">
+        <input type="reset" value="重置">
+        
+    </form>
+</body>
+</html>

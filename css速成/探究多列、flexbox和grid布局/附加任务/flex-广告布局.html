@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex广告布局</title>
+    <style type="text/css">
+    html{
+         background-color: #b39184;
+    }
+        .main{
+            display:flex ;
+            width: 800px;
+            height: 400px;
+            background-color: #ebebeb;
+            flex-direction:row;
+            
+        }
+        .left{
+            width: 150px;
+            height: 100%;
+            background-color: white;
+        }
+        .right_main{
+            width: 650px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            align-content:space-around;
+
+        }
+        .list{
+            width: 150px;
+            height: 190px;
+           background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left"></div>
+        <div class="right_main">
+            <div class="list"></div>
+            <div class="list"></div>
+            <div class="list"></div>
+            <div class="list"></div>
+            <div class="list"></div>
+            <div class="list"></div>
+            <div class="list"></div>
+            <div class="list"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品促销</title>
+    <style>
+       
+        .sale {
+            width: 414px;
+            position:relative;
+
+        }
+
+        .sale img {
+            width: 100%;
+        }
+
+        .sale::before {
+            content: url(img/促销左上.png);
+            position: absolute;
+        }
+
+        .sale::after{
+            right: 0px;
+            bottom: 0;
+            float: right;
+            content: url(img/促销右下.png);
+            position:absolute;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sale">
+        <img src="img/哈根达斯.jpg" alt="">
+    </div>
+    <div class="sale">
+        <img src="img/black.jpg" alt="">
+    </div>
+</body>
+
+</html>

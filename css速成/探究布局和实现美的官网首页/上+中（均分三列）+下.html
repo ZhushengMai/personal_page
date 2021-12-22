@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上+中（均分三列）+下</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        body{
+            display: grid;
+            height: 100vh;
+            row-gap: 10px;
+            grid-template-rows: auto 1fr auto;
+
+        }
+        header,main,footer{
+            background-color: #e5e5e5;
+        }
+        
+        /* main{
+            display: grid;
+            grid-template-columns: 33.33% 33.33% 33.33%;
+            column-gap: 10px;
+
+        }
+        .nested{
+            background-color: aquamarine;
+        } */
+
+        .middle{
+            display: grid;
+            grid-template-columns: 33.33% 33.33% 33.33%;
+            box-sizing: border-box;
+            column-gap: 10px;
+        }
+        .nested{
+            background-color: #e5e5e5;
+        }
+    </style>
+</head>
+<body>
+   <header><h1>上</h1></header>
+    <div class="middle">
+        <div class="nested">中1</div>
+        <div class="nested">中2</div>
+        <div class="nested">中3</div>
+    </div>
+   <footer><h1>下</h1></footer>
+</body>
+</html>

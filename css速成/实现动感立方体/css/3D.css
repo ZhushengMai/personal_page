@@ -1,0 +1,29 @@
+div{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin-bottom: 10px;
+    transition: all 2s;
+}
+
+.rotateX{
+    background-color: bisque;
+    
+}
+.rotateX:hover{
+    transform: rotateX(180deg);
+}
+
+.rotateY{
+    background-color: rgb(54,163,150);
+    
+}
+.rotateY:hover{
+    transform: rotateY(180deg);
+}
+.rotateZ{
+    background-color: rgb(176,135,95);
+}
+.rotateZ:hover{
+    transform: rotateZ(180deg);
+}

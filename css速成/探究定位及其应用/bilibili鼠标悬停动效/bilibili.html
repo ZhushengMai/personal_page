@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bilibili鼠标悬停弹出</title>
+    <style>
+        .main{
+            width: 300px;
+            height: 260px;
+            overflow: hidden;
+            position: relative;
+            padding: 0;
+            margin: 0;
+            margin: 0 auto;
+            
+        }
+        .main::before{
+            content: "";
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 48px;
+        }
+
+        .info-box{
+            position: relative;
+            overflow: hidden;
+
+        }
+        .info-box::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: rgba(0, 0, 0,.7);
+            opacity: 0;
+            transition: opacity .2s;
+        }
+
+        .picture img{
+            width: 100%;
+            height: 100%;
+            border-radius: 2px;
+        }
+        a{
+            text-decoration: none;
+            color: #212121;
+            transition: color .3s;
+        }
+        .info{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 75px;
+            left: 0;
+            transition: top .5s;
+            z-index: 3;
+            display: block;
+            color: #fff;
+            
+        }
+        .info img{
+            width: 100%;
+            height: 100%;
+        }
+        .picture:hover .info{
+            top: 0px;
+            background: rgba(0,0,0,.6);
+            
+        }
+        .picture:hover .play{
+            opacity: 1;
+        }
+        .play{
+        
+            position: absolute;
+            z-index: 10;
+            display: flex;
+            justify-content: flex-end;
+            right: 0;  
+            top: 120px;
+            transition:opacity  1.5s;   
+            opacity: 0;
+        }
+        .play img{
+            width: 80%;
+            
+        }
+       p{
+           margin-top: 20px;
+           margin-left: 10px;
+       }
+       .tittle{
+           font-size: 20px;
+       }
+       .up{
+           margin-top: 0;
+           font-size: 15px;
+       }
+       .player{
+           margin-top: 0;
+           font-size: 14px;
+       }
+        /* .main:hover .display{
+            display: block;
+        } */
+    </style>
+</head>
+<body>
+    <div class="main">
+        <!-- <div class="play">
+            <img src="img/play.png" alt="">
+          </div> -->
+        <div class="info-box">
+      <a href="https://www.bilibili.com/video/BV1u64y1a7hW" class="picture">
+          <img src="img/girl.jpg" alt="">
+          
+          <div class="info">
+            <div class="play">
+                <img src="img/play.png" alt="">
+              </div>
+              
+                <p class="tittle">让晚风轻轻吹送了落霞。《遥远的她》cover.张学友</p>
+                <p class="up">UP:静哔哔哔哔</p>
+                <p class="player">81.7万播放</p>
+
+                
+            </div>
+      </a>
+      </div>
+    </div>
+</body>
+</html>

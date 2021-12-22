@@ -1,0 +1,171 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+.banner{
+width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    z-index: 999;
+    /* background-color: antiquewhite; *//* 辅助色 */
+    display: block;
+    top: 0;
+    left: 0;
+
+}/* 顶端导航栏 */
+ul{
+    list-style: none;
+}/* 所有列表前标消失 */
+.nav{
+    display: flex;
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+}/* 菜单主体 */
+.midea_logo{
+    width: 104px;
+    height: auto;
+}
+.midea_logo a img{
+    width: 100%;
+ 
+
+}
+.nav .menu .menu_ul{
+    margin: 0;
+    display: flex;
+    /* background-color: antiquewhite; */
+    height: 80px;
+    align-items: flex-end;
+
+}/* 一级菜单 */
+.menu_ul .menu_li{
+    height: 50px;
+/*     background-color: aqua; */
+    padding: 10px 20px;
+    line-height: 40px;
+    font-size: 16px;
+    font-style: inherit;
+}
+
+.menu_li:hover .menu_link{
+    padding-bottom: 5px;
+    border-bottom: #225560 2px solid;
+    color: #225560;
+}/* 鼠标移动到菜单文字触发变色效果 */
+
+.display{
+    z-index: 1;
+    left: 0;
+    top:80px;
+    position: absolute;
+    width: 100%;
+    height:auto;
+    background-color: #225560;
+    /* display: none; */
+    transform: scaleY(0);
+    transform-origin:50% 0;
+    transition: all 0.6s;
+    overflow: hidden;
+}/* 下拉二级菜单背景 */
+
+
+.menu_li:hover .display{
+    /* display: block; */
+    transform: scaleY(1);
+    
+}
+
+.nav .search:hover .display{
+    transform: scaleY(1);
+}
+
+.display_ul{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    justify-content: center;
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+.display_li{
+    margin-top: 20px;
+    
+}
+
+.display_li a:hover{
+    padding-bottom: 10px;
+    border-bottom: #fff 2px solid;
+}
+
+a{
+    
+    color: #fff;
+    text-decoration: none;
+}
+.search{
+    width: 30px;
+    height: 100%;
+    
+}
+.search_img img{
+    width: 120%;
+}
+.country{
+    margin-left: 20px;
+}
+.nav .country:hover .display{
+    transform: scaleY(1);
+}
+.search_main{
+    width: 50%;
+    height: auto;
+    margin-top:5%;
+    display: flex;
+   color: white;
+   margin: 0 auto; 
+   flex-direction: column;
+   margin-top: 5%;
+   margin-bottom: 5%;
+
+}/*搜索框主体*/
+.search_main_ul{
+    margin: 0 auto; 
+    display: flex;
+    margin: 0;
+    top: 10px;
+    position: relative;
+}
+
+.search_main_ul li{
+    padding: 10px 15px;
+}
+
+.input_search{
+        color: white;
+        width: 100%;
+        height: 50px;
+       border: 0;
+       outline: 0;
+       background: transparent;
+       border-bottom:2px solid white;
+       font-size: 20px;
+       margin: 0 auto; 
+}
+h4{
+    margin: 0;
+}
+.mainland{
+
+}/* 国家列表 */
+.mainland_flag{
+
+}

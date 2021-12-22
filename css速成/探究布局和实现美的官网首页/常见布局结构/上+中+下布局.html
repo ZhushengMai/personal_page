@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid之上-中-下结构</title>
+    <style>
+     *{
+         margin: 0;
+         padding: 0;
+     }
+body{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 5px;
+}
+    header,main,footer{
+        background-color: #ccc;
+    }
+    </style>
+</head>
+<body>
+    <header><h1>Header</h1></header>
+    <main>main</main>
+    <footer>footer</footer>
+</body>
+</html>

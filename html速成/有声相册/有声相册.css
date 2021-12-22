@@ -1,0 +1,102 @@
+html{
+   background-color: antiquewhite;
+   margin: 0;
+ 
+}
+body{
+    margin: 0;
+}
+
+
+h2{
+    text-align: center;
+}
+
+#top{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(58,63,64);
+
+    
+}
+
+#font{
+    color: white;
+    font-style: normal;
+    font-size: 30pt;
+    line-height: 80px;
+    text-align: center;
+}
+
+
+#menu{
+    top: 35%;
+    right: 0;
+    position: fixed;
+
+
+}
+#menu li{
+    text-decoration: none;  /*去掉前面的圆点*/
+	list-style: none;
+    width: 100px;
+    height: 50px;
+    background-color:#8ac6d1;
+    text-align: center;
+    line-height: 50px;
+    top: 50%;
+  
+    
+}
+
+#menu li a{
+    color:#fff;
+    text-decoration: none;
+    display: block;
+}
+
+#menu li a:hover{ 
+    background-color:#000;
+}
+.main{
+    width: 50%;
+    margin: auto;
+}
+.picture{
+    margin:auto;
+
+    width: 100%;
+}
+
+img{
+    display: block;
+    margin: auto;
+    width: 200px;
+
+}
+
+
+.code-display-button{
+    margin-top: 50px;
+    width: 100px;
+    height: 50px;
+
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    background-color:rgb(58,63,64) ;
+    margin-left:10%;
+    position: absolute;
+    
+}
+.code-display-button:hover pre{
+    display: block;
+}
+pre{
+    margin-top: 0;
+    background-color:rgb(58,63,64) ;
+    color:white;
+    display: none;
+    width:300px;
+    
+}
