@@ -1,9 +1,11 @@
 @font-face {
-    font-family: 'iconfont';  /* Project id 3280731 */
+    font-family: 'iconfont';
+    /* Project id 3280731 */
     src: url('//at.alicdn.com/t/font_3280731_9q6z6dniak8.woff2?t=1653542290252') format('woff2'),
-         url('//at.alicdn.com/t/font_3280731_9q6z6dniak8.woff?t=1653542290252') format('woff'),
-         url('//at.alicdn.com/t/font_3280731_9q6z6dniak8.ttf?t=1653542290252') format('truetype');
-  }
+        url('//at.alicdn.com/t/font_3280731_9q6z6dniak8.woff?t=1653542290252') format('woff'),
+        url('//at.alicdn.com/t/font_3280731_9q6z6dniak8.ttf?t=1653542290252') format('truetype');
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -31,34 +33,42 @@ ul {
     z-index: 999;
     top: 0;
 }
+
 @media screen and (max-width:600px) {
-    .banner-other{
+    .banner-other {
         display: none;
     }
-    .menu{
-        display:block;
+
+    .menu {
+        display: block;
     }
-    .beginning{
+
+    .beginning {
         flex-wrap: wrap;
         justify-content: center;
     }
+
     /* .face{
         display: none;
     } */
 }
-@media screen and (min-width:600px){
-    .menu{
+
+@media screen and (min-width:600px) {
+    .menu {
         display: none;
     }
 }
+
 .title {
     color: #fff;
-    font-size:3.5vh;
+    font-size: 3.5vh;
 }
-.menu{
+
+.menu {
     font-family: 'iconfont';
     font-size: 30px;
 }
+
 .banner-other li {
     padding: 10px 25px;
 }
@@ -85,17 +95,25 @@ ul {
     width: 200px;
     height: 200px;
     background-color: #e8b85e;
-    animation:turnX 3s infinite;
+    animation: turnX 3s infinite;
 }
-@keyframes turnX{
 
-    100%{transform:rotate(360deg);}
-  
-  }
+@keyframes turnX {
+    0% {
+        transform: rotate(0deg);
+    }
+    50%{
+        border-radius: 50%;
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
 
 .beginning-font {
     color: #39393b;
-    font-size:8vh;
+    font-size: 8vh;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
 }
