@@ -100,80 +100,6 @@ ul {
     text-align: center;
 }
 
-.main {
-    margin: 5%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 400px);
-    justify-content: center;
-    column-gap: 2px;
-    row-gap: 2px;
-}
-
-.main div {
-    text-align: center;
-
-    font-size: 15pt;
-    line-height: 40px;
-    letter-spacing: 2px;
-
-}
-
-.main p {
-    font-size: 25pt;
-}
-
-.information {
-    background-color: #39393b;
-}
-
-.edu {
-    background-color: #688792;
-    grid-column-start: 2;
-    grid-column-end: 4;
-}
-
-.project {
-    background-color: #82689e;
-    grid-column-start: 4;
-
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-
-.task {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    background-color: #e8b85e;
-    color: #39393b;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-table {
-    border-collapse: collapse;
-
-}
-
-table td {
-    border: 1px solid black;
-}
-
-th {
-    border: 1px solid black;
-}
-
-.jieshao {
-    background-color: #648d76;
-}
-
-.instant {
-    background-color: #39393b;
-    grid-column-start: 1;
-    grid-column-end: 5;
-}
 
 a {
     color: #ecefed;
@@ -199,8 +125,6 @@ a {
     background-color: #39393b;
     margin-top: 20px;
     flex-direction: column;
-
-
 }
 
 .display-main-tittle {
