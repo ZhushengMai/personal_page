@@ -40,10 +40,11 @@ ul {
     }
     .beginning{
         flex-wrap: wrap;
+        justify-content: center;
     }
-    .face{
+    /* .face{
         display: none;
-    }
+    } */
 }
 @media screen and (min-width:600px){
     .menu{
@@ -84,12 +85,19 @@ ul {
     width: 200px;
     height: 200px;
     background-color: #e8b85e;
+    animation:turnX 3s infinite;
 }
+@keyframes turnX{
+
+    100%{transform:rotate(360deg);}
+  
+  }
 
 .beginning-font {
     color: #39393b;
-    font-size:10vh;
+    font-size:8vh;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
 }
 
 .main {
