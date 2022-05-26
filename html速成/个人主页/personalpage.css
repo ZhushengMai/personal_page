@@ -1,100 +1,139 @@
-body{
+@font-face {
+    font-family: 'iconfont';  /* Project id 3280731 */
+    src: url('//at.alicdn.com/t/font_3280731_9q6z6dniak8.woff2?t=1653542290252') format('woff2'),
+         url('//at.alicdn.com/t/font_3280731_9q6z6dniak8.woff?t=1653542290252') format('woff'),
+         url('//at.alicdn.com/t/font_3280731_9q6z6dniak8.ttf?t=1653542290252') format('truetype');
+  }
+body {
     margin: 0;
     padding: 0;
     background-color: #fff;
-    font-family:"黑体";
+    font-family: "黑体";
     color: #ecefed;
 }
-ul{
+
+ul {
     display: flex;
     list-style-type: none;
     justify-content: space-around;
 }
 
-.banner{
+.banner {
     width: 100%;
-    min-width: 1200px;
     height: 80px;
     background-color: #39393b;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    font-size: 20px; 
-    overflow: hidden;
+    font-size: 20px;
     position: fixed;
     z-index: 999;
+    top: 0;
 }
-.banner-other li{
+@media screen and (max-width:600px) {
+    .banner-other{
+        display: none;
+    }
+    .menu{
+        display:block;
+    }
+    .beginning{
+        flex-wrap: wrap;
+    }
+    .face{
+        display: none;
+    }
+}
+@media screen and (min-width:600px){
+    .menu{
+        display: none;
+    }
+}
+.title {
+    color: #fff;
+    font-size:3.5vh;
+}
+.menu{
+    font-family: 'iconfont';
+    font-size: 30px;
+}
+.banner-other li {
     padding: 10px 25px;
 }
-.banner-other li:hover{
-    cursor:pointer;
+
+.banner-other li:hover {
+    cursor: pointer;
     padding-bottom: 2px;
     border-bottom: #fff 2px solid;
 }
 
-.beginning{
+.beginning {
     position: relative;
     width: 100%;
-    height:700px;
+    margin-top: 80px;
+    height: 700px;
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
-    
-}
-    
-  .face{
-      width: 30%;
-      height:200px;
-      background-color: #e8b85e;
-  }  
 
-.beginning-font{
+}
+
+.face {
+    width: 200px;
+    height: 200px;
+    background-color: #e8b85e;
+}
+
+.beginning-font {
     color: #39393b;
-    font-size: 20vh;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:10vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.main{
+.main {
     margin: 5%;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(3,400px);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 400px);
     justify-content: center;
     column-gap: 2px;
-    row-gap: 2px; 
+    row-gap: 2px;
 }
 
-.main div{
+.main div {
     text-align: center;
 
-    font-size:15pt ;
+    font-size: 15pt;
     line-height: 40px;
     letter-spacing: 2px;
 
 }
-.main p{
+
+.main p {
     font-size: 25pt;
 }
 
-.information{
-   background-color: #39393b;
+.information {
+    background-color: #39393b;
 }
-.edu{
+
+.edu {
     background-color: #688792;
     grid-column-start: 2;
     grid-column-end: 4;
 }
-.project{
+
+.project {
     background-color: #82689e;
     grid-column-start: 4;
 
     grid-row-start: 1;
     grid-row-end: 3;
 }
-.task{
+
+.task {
     grid-column-start: 1;
     grid-column-end: 3;
     background-color: #e8b85e;
@@ -104,44 +143,50 @@ ul{
     flex-direction: column;
     align-items: center;
 }
+
 table {
     border-collapse: collapse;
- 
- }
-table td{
+
+}
+
+table td {
     border: 1px solid black;
 }
 
-th{
-   border: 1px solid black;
+th {
+    border: 1px solid black;
 }
-.jieshao{
+
+.jieshao {
     background-color: #648d76;
 }
 
-.instant{
+.instant {
     background-color: #39393b;
     grid-column-start: 1;
     grid-column-end: 5;
 }
-a{
+
+a {
     color: #ecefed;
     text-decoration: none;
 }
 
-.homework{
-    margin:20px auto;
-    width: 50%;
+.homework {
+    margin: 20px auto;
+    width: 70%;
     margin-bottom: 50px;
 
 }
-.homework-tittle{
+
+.homework-tittle {
     color: #39393b;
     font-size: 3em;
     text-align: center;
     border-bottom: 1px #39393b solid;
 }
-.homework-display{
+
+.homework-display {
     display: flex;
     background-color: #39393b;
     margin-top: 20px;
@@ -149,19 +194,22 @@ a{
 
 
 }
-.display-main-tittle{
+
+.display-main-tittle {
     font-size: 2em;
 }
-.homework-display-main{
+
+.homework-display-main {
     display: flex;
     flex-direction: column;
     background-color: #39393b;
 }
-.homework-display-main li{
+
+.homework-display-main li {
     height: 50px;
 }
 
-.homework-display-main li a:hover{
+.homework-display-main li a:hover {
     padding-bottom: 5px;
     border-bottom: 2px white solid;
 }
