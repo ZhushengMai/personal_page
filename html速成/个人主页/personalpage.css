@@ -62,6 +62,7 @@ ul {
 .title {
     color: #fff;
     font-size: 3.5vh;
+    cursor: pointer;
 }
 
 .menu {
