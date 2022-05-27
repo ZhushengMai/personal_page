@@ -68,6 +68,7 @@ ul {
 .menu {
     font-family: 'iconfont';
     font-size: 30px;
+    cursor: pointer;
 }
 
 .banner-other li {
@@ -84,7 +85,7 @@ ul {
     position: relative;
     width: 100%;
     margin-top: 80px;
-    height: 700px;
+    height: 90vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
