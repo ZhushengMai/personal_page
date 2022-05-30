@@ -10,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fff;
-    font-family: "黑体";
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #ecefed;
 }
 
@@ -34,7 +34,8 @@ ul {
     top: 0;
 }
 
-@media screen and (max-width:600px) {
+/*当窗口宽度小于800px时的设置*/
+@media screen and (max-width:800px) {
     .banner-other {
         display: none;
     }
@@ -48,15 +49,27 @@ ul {
         justify-content: center;
     }
 
-    /* .face{
-        display: none;
-    } */
+    .beginning-font {
+        width: 90%;
+        font-size: 5vh;
+        color: #39393b;
+        text-align: center;
+    }
+
 }
 
-@media screen and (min-width:600px) {
+/*当窗口宽度大于800px时的设置*/
+@media screen and (min-width:800px) {
     .menu {
         display: none;
     }
+    .beginning-font {
+        width: 50%;
+        color: #39393b;
+        font-size: 8vh;
+        text-align: center;
+    }
+    
 }
 
 .title {
@@ -82,9 +95,9 @@ ul {
 }
 
 .beginning {
+    top: 80px;
     position: relative;
     width: 100%;
-    margin-top: 80px;
     height: 90vh;
     display: flex;
     flex-direction: row;
@@ -104,21 +117,18 @@ ul {
     0% {
         transform: rotate(0deg);
     }
-    50%{
+
+    50% {
         border-radius: 50%;
     }
+
     100% {
         transform: rotate(360deg);
     }
 
 }
 
-.beginning-font {
-    color: #39393b;
-    font-size: 8vh;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-}
+
 
 
 a {
