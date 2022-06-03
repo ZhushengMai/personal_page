@@ -1,4 +1,4 @@
-const word = document.querySelector(".beginning-font");
+const word = document.querySelector(".home-font");
 fetch('https://v1.hitokoto.cn?c=i&c=k')
     .then(res => res.json())
     .then(res => {

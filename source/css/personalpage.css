@@ -9,9 +9,9 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #fff;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #ecefed;
+    box-sizing: content-box;
 }
 
 ul {
@@ -23,7 +23,7 @@ ul {
 .banner {
     width: 100%;
     height: 80px;
-    background-color: #39393b;
+    /* background-color: #39393b; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -44,15 +44,15 @@ ul {
         display: block;
     }
 
-    .beginning {
+    .home {
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .beginning-font {
+    .home-font {
         width: 90%;
         font-size: 10vw;
-        color: #39393b;
+        color: #ffffff;
         text-align: center;
     }
 
@@ -63,13 +63,14 @@ ul {
     .menu {
         display: none;
     }
-    .beginning-font {
+
+    .home-font {
         width: 50%;
-        color: #39393b;
+        color: #ffffff;
         font-size: 8vh;
         text-align: center;
     }
-    
+
 }
 
 .title {
@@ -94,37 +95,14 @@ ul {
     border-bottom: #fff 2px solid;
 }
 
-.beginning {
+.home {
     top: 80px;
-    position: relative;
     width: 100%;
     height: 90vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
-}
-
-.face {
-    width: 200px;
-    height: 200px;
-    background-color: #e8b85e;
-    animation: turnX 3s infinite;
-}
-
-@keyframes turnX {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    50% {
-        border-radius: 50%;
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
 
 }
 
@@ -174,4 +152,14 @@ a {
 .homework-display-main li a:hover {
     padding-bottom: 5px;
     border-bottom: 2px white solid;
+}
+
+.backgroundVideo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: -999;
 }
