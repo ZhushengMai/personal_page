@@ -4,5 +4,5 @@ fetch('https://v1.hitokoto.cn?c=i&c=k')
     .then(res => {
         console.log(res)
         console.log(res.hitokoto);
-        word.innerHTML = res.hitokoto + "<br/>" + "————" + `${res.from}`
+        word.innerHTML = res.hitokoto 
     });
