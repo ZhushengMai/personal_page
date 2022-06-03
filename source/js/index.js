@@ -3,11 +3,10 @@ const span = document.querySelector("#word")
 const background = document.querySelector("#background")
 /* 打字机效果函数 */
 function typing(str) {
-    console.log(str);
     let newStr = '';
     let i = 0;
     let timer = setInterval(() => {
-        if (newStr.length < str.length) {
+        if (newStr.length < str.length - 1) {
             newStr += str[i++];
             span.innerHTML = newStr + '_';
 
@@ -22,6 +21,6 @@ fetch('https://v1.hitokoto.cn?c=i&c=k')
     .then(res => res.json())
     .then(res => {
         /* span.innerHTML = res.hitokoto */
+        console.log(res.hitokoto);
         typing(res.hitokoto)
     });
-
