@@ -57,7 +57,7 @@ ul {
         text-align: center;
 
     }
-
+    
 }
 
 /*当窗口宽度大于800px时的设置*/
@@ -72,7 +72,7 @@ ul {
         font-size: 4vw;
         text-align: center;
     }
-
+    
 }
 
 .home-font {
@@ -89,6 +89,9 @@ ul {
     font-family: 'iconfont';
     font-size: 30px;
     cursor: pointer;
+}
+.menu:hover {
+    
 }
 
 .banner-other li {

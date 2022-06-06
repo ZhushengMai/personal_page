@@ -1,7 +1,9 @@
 const word = document.querySelector(".home-font");
-const span = document.querySelector("#word")
-const background = document.querySelector("#background")
-/* 打字机效果函数 */
+const span = document.querySelector("#word");
+const background = document.querySelector("#background");
+const menu = document.querySelector(".menu");
+
+/* 打字机输入效果函数 */
 function typing(str) {
     let newStr = '';
     let i = 0;
@@ -17,10 +19,13 @@ function typing(str) {
     }, 200)
 }
 
+menu.addEventListener("click", () => {
+    
+})
+
+
 fetch('https://v1.hitokoto.cn?c=i&c=k')
     .then(res => res.json())
     .then(res => {
-        /* span.innerHTML = res.hitokoto */
-        console.log(res.hitokoto);
         typing(res.hitokoto)
     });
