@@ -12,7 +12,7 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #ecefed;
     box-sizing: content-box;
-    
+
 }
 
 ul {
@@ -31,9 +31,10 @@ ul {
     justify-content: space-around;
     align-items: center;
     font-size: 20px;
-    position: fixed;
+    position: sticky;
     z-index: 999;
     top: 0;
+    left: 0;
 }
 
 /*当窗口宽度小于800px时的设置*/
@@ -57,7 +58,7 @@ ul {
         text-align: center;
 
     }
-    
+
 }
 
 /*当窗口宽度大于800px时的设置*/
@@ -72,7 +73,7 @@ ul {
         font-size: 4vw;
         text-align: center;
     }
-    
+
 }
 
 .home-font {
@@ -90,9 +91,8 @@ ul {
     font-size: 30px;
     cursor: pointer;
 }
-.menu:hover {
-    
-}
+
+.menu:hover {}
 
 .banner-other li {
     padding: 10px 25px;
@@ -105,16 +105,18 @@ ul {
 }
 
 .home {
-    top: 80px;
+    top: 100px;
     width: 100%;
     height: 90vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
 }
-
+.home-font {
+    background-color: rgba(87, 87, 87, 0.618);
+    border-radius: 20px;
+}
 
 
 
